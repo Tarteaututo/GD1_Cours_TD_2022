@@ -12,6 +12,11 @@ public class Path : MonoBehaviour
         return _waypoints[index];
     }
 
+    public int GetWaypointCount()
+    {
+        return _waypoints.Count;
+    }
+
     private void OnDrawGizmos()
     {
         //Transform firstWaypoint = _waypoints[0];
