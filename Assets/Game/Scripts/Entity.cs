@@ -16,20 +16,25 @@ public class Entity : MonoBehaviour
 
     private int _currentWaypointIndex = 0;
 
-    private void Awake()
+    public void SetPath(Path path)
     {
-        Transform firstWaypoint = _path.GetWaypoint(0);
-
-        // for
-        // Debug.Log
-        // GetWaypoint
-
-        for (int i = 0; i < _path.GetWaypointCount(); i++)
-        {
-            Vector3 position = _path.GetWaypoint(i).position;
-            Debug.Log(position);
-        }
+        _path = path;
     }
+
+    //private void Awake()
+    //{
+    //    Transform firstWaypoint = _path.GetWaypoint(0);
+
+    //    // for
+    //    // Debug.Log
+    //    // GetWaypoint
+
+    //    for (int i = 0; i < _path.GetWaypointCount(); i++)
+    //    {
+    //        Vector3 position = _path.GetWaypoint(i).position;
+    //        Debug.Log(position);
+    //    }
+    //}
 
     private void Update()
     {
