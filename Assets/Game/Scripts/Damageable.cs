@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[SelectionBase]
 public class Damageable : MonoBehaviour
 {
     [SerializeField]
@@ -18,5 +19,9 @@ public class Damageable : MonoBehaviour
     public void TakeDamage(int damage)
     {
         _health = _health - damage;
+        if (_health <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
 }
