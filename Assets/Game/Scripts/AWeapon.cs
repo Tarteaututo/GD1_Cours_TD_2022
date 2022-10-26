@@ -37,11 +37,12 @@ public abstract class AWeapon : MonoBehaviour
 
     // CreateProjectile should return the created instance
     // in order to modified it in derived classes
-    protected virtual void CreateProjectile()
+    protected virtual Projectile CreateProjectile()
     {
         Projectile instance = Instantiate<Projectile>(_projectilePrefab);
         instance.transform.position = _muzzle.position;
         instance.transform.rotation = _muzzle.rotation;
+        return instance;
     }
 
     protected abstract void Fire();
