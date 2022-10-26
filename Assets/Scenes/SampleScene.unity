@@ -1041,7 +1041,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh23864
+  m_Name: pb_Mesh23860
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1475,11 +1475,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1726003732}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c0a5de6d6e306f4caeb93c56ae960dd, type: 3}
+  m_Script: {fileID: 11500000, guid: b0c8537d5e50c6440834135ec5273beb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _projectilePrefab: {fileID: 1780245333118114604, guid: 255eccbdd0ba8fc4d884a092539227b4, type: 3}
   _muzzle: {fileID: 1726003733}
+  _timer:
+    _duration: 1
 --- !u!1 &1779303373
 GameObject:
   m_ObjectHideFlags: 0
