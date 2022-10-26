@@ -21,12 +21,12 @@ public class ShotgunWeapon : AWeapon
         {
             Projectile instance = CreateProjectile();
             float appliedSpread = _spread * 0.5f; // equivalent to _spread / 2;
-            instance.transform.rotation = 
+            instance.transform.rotation =
                 instance.transform.rotation *
                 Quaternion.Euler
                 (
-                    Random.Range(-appliedSpread, appliedSpread), 
-                    Random.Range(-appliedSpread, appliedSpread), 
+                    Random.Range(-appliedSpread, appliedSpread),
+                    Random.Range(-appliedSpread, appliedSpread),
                     Random.Range(-appliedSpread, appliedSpread)
                 );
         }
