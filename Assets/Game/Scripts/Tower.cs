@@ -20,6 +20,9 @@ public class Tower : MonoBehaviour
     [SerializeField]
     private OrientToTarget _orientToTarget = null;
 
+    [SerializeField]
+    private AWeapon _weapon = null;
+
     // variable cache
     [SerializeField] // juste read only, pas obligé
     private List<Damageable> damageables;
@@ -38,8 +41,12 @@ public class Tower : MonoBehaviour
         {
             // Set target to Orient target
             _orientToTarget.SetTarget(target.transform);
+            _weapon.enabled = true;
         }
-
+        else
+        {
+            _weapon.enabled = false;
+        }
     }
 
     private void RemoveNullDamageable()
