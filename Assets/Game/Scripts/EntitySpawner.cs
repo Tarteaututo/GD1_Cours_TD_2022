@@ -13,7 +13,7 @@ public class EntitySpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("SpawnEntity", 0, 0.5f); 
+        InvokeRepeating("SpawnEntity", 0, 2f); 
     }
 
     void SpawnEntity()

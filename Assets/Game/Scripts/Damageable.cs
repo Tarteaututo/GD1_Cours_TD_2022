@@ -21,6 +21,11 @@ public class Damageable : MonoBehaviour
     [SerializeField]
     private int _maxHealth = 1;
 
+    public int GetHealth()
+    {
+        return _health;
+    }
+
     private void Awake()
     {
         _health = _maxHealth;

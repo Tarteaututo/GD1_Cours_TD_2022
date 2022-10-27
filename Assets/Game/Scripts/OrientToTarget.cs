@@ -18,6 +18,12 @@ public class OrientToTarget : MonoBehaviour
     [SerializeField] // serializefield parce que c'est utile pour debugguer
     private Transform _target = null;
 
+    // Getter / Setter
+    public void SetTarget(Transform target)
+    {
+        _target = target;
+    }
+
     private void Update()
     {
         if (_target != null)

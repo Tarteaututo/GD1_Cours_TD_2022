@@ -93,8 +93,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1839830281492644020}
   - component: {fileID: 1839830281492644023}
-  - component: {fileID: 1839830281492644022}
   - component: {fileID: 1839830281492644017}
+  - component: {fileID: 3631219539815892890}
   m_Layer: 0
   m_Name: Entity
   m_TagString: Untagged
@@ -134,18 +134,6 @@ MonoBehaviour:
   _speed: 1
   _nextDestinationThreshold: 1
   _path: {fileID: 0}
---- !u!114 &1839830281492644022
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1839830281492644021}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b4e44930b61ed84ab532ed97b5a9ad0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &1839830281492644017
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -162,6 +150,26 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &3631219539815892890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1839830281492644021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3871a64472408864788bcec06c295cc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DamageTakenUnityEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  DamageTakenUnityEventWithArgs:
+    m_PersistentCalls:
+      m_Calls: []
+  _health: 1
+  _maxHealth: 1
 --- !u!1 &1839830282127099723
 GameObject:
   m_ObjectHideFlags: 0
