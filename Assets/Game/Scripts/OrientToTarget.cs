@@ -8,7 +8,8 @@ public class OrientToTarget : MonoBehaviour
     public enum Mode
     {
         Horizontal,
-        Vertical
+        Vertical,
+        Free
     }
 
     [SerializeField]
@@ -33,7 +34,11 @@ public class OrientToTarget : MonoBehaviour
                 direction.x = 0;
                 transform.localRotation = Quaternion.LookRotation(direction, Vector3.right);
             }
-            
+            else if (_mode == Mode.Free)
+            {
+                transform.rotation = Quaternion.LookRotation(direction);
+            }
+
         }
     }
 }
