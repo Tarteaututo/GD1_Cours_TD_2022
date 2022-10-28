@@ -5,21 +5,24 @@ using UnityEngine;
 public class EntitySpawner : MonoBehaviour
 {
     [SerializeField]
-    private Entity _entityPrefab;
+    private EntityDescription.EntityType _entityType;
     
     [SerializeField]
     private Path _path;
 
-    // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("SpawnEntity", 0, 2f); 
+        InvokeRepeating("SpawnEntity", 0, 2f);
+        
+        //LevelReference.Instance.toto;
     }
 
     void SpawnEntity()
     {
         Debug.Log("SpawnEntity");
-        Entity entityInstance = Instantiate(_entityPrefab);
+
+        EntityDescription entityDescription = LevelReference.Instance.entityDatabase.GetEntityByType(_entityType);
+        Entity entityInstance = Instantiate(entityDescription.EntityPrefab);
         entityInstance.SetPath(_path);
     }
 }

@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b606418d8b7506b4cacaf8f7c6746f2a, type: 3}
+  m_Name: EntityDescription.Speedy
+  m_EditorClassIdentifier: 
+  _entityType: 2
+  _entityPrefab: {fileID: 2798836547144508870, guid: 4ea68016c8a7832459d5f223b0d425bf, type: 3}
+  _entityIcon: {fileID: 0}
