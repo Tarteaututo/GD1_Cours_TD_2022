@@ -1333,7 +1333,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 123f96433401cf4468ba1367ac487e1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _entityType: 0
+  _entityType: 1
   _path: {fileID: 894812924}
 --- !u!4 &1211698629
 Transform:
