@@ -21,20 +21,15 @@ public class Entity : MonoBehaviour
         _path = path;
     }
 
-    //private void Awake()
-    //{
-    //    Transform firstWaypoint = _path.GetWaypoint(0);
+    private void OnEnable()
+    {
+        LevelReference.Instance.entityManager.Register(this);
+    }
 
-    //    // for
-    //    // Debug.Log
-    //    // GetWaypoint
-
-    //    for (int i = 0; i < _path.GetWaypointCount(); i++)
-    //    {
-    //        Vector3 position = _path.GetWaypoint(i).position;
-    //        Debug.Log(position);
-    //    }
-    //}
+    private void OnDisable()
+    {
+        LevelReference.Instance.entityManager.Unregister(this);
+    }
 
     private void Update()
     {

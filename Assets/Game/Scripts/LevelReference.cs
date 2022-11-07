@@ -34,4 +34,7 @@ public class LevelReference : MonoBehaviour
 
     public EntityDatabase entityDatabase;
 
+    public StatManager statManager = null;
+
+    public EntityManager entityManager = null;
 }

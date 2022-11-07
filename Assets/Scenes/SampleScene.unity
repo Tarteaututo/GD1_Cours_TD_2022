@@ -630,6 +630,8 @@ GameObject:
   - component: {fileID: 893250857}
   - component: {fileID: 893250856}
   - component: {fileID: 893250855}
+  - component: {fileID: 893250859}
+  - component: {fileID: 893250858}
   m_Layer: 0
   m_Name: LevelReference
   m_TagString: Untagged
@@ -665,6 +667,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   entityDatabase: {fileID: 893250855}
+  statManager: {fileID: 893250859}
+  entityManager: {fileID: 893250858}
 --- !u!4 &893250857
 Transform:
   m_ObjectHideFlags: 0
@@ -680,6 +684,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &893250858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 893250854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08c80b27ae0a35c448583bd6c2d46759, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _entities: []
+--- !u!114 &893250859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 893250854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90edf52b981ed0646917d6a53d8d88ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _entityCount: 0
 --- !u!1 &894812922
 GameObject:
   m_ObjectHideFlags: 0
@@ -1946,7 +1976,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh23896
+  m_Name: pb_Mesh23918
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
